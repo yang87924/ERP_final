@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA732E16-6E76-4B19-BC44-D92F87284EED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PPERP</RootNamespace>
+    <AssemblyName>PPERP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2021 期末考 4A690103.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2021 期末考 4A690103.Designer.cs">
+      <DependentUpon>2021 期末考 4A690103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsDB.cs" />
+    <Compile Include="crBPList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crBPList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crOrderList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crOrderList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmU7_2_BPList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU7_2_BPList.Designer.cs">
+      <DependentUpon>frmU7_2_BPList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectBP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectBP.Designer.cs">
+      <DependentUpon>frmSelectBP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU2_1_BP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU2_1_BP.Designer.cs">
+      <DependentUpon>frmU2_1_BP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU3_2_SQLServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU3_2_SQLServer.Designer.cs">
+      <DependentUpon>frmU3_2_SQLServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU3_3_SQLCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU3_3_SQLCommand.Designer.cs">
+      <DependentUpon>frmU3_3_SQLCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU4_2_ComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU4_2_ComboBox.designer.cs">
+      <DependentUpon>frmU4_2_ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU4_3_DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU4_3_DataGridView.Designer.cs">
+      <DependentUpon>frmU4_3_DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU4_4_Dataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU4_4_Dataset.designer.cs">
+      <DependentUpon>frmU4_4_Dataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU5_2_Databinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU5_2_Databinding.Designer.cs">
+      <DependentUpon>frmU5_2_Databinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU5_5_DatabindingOneRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU5_5_DatabindingOneRecord.Designer.cs">
+      <DependentUpon>frmU5_5_DatabindingOneRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU6_5MasterDetail_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU6_5MasterDetail_Order.designer.cs">
+      <DependentUpon>frmU6_5MasterDetail_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmU7_3_OrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmU7_3_OrderList.Designer.cs">
+      <DependentUpon>frmU7_3_OrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="2021 期末考 4A690103.resx">
+      <DependentUpon>2021 期末考 4A690103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crBPList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crBPList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crOrderList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOrderList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectBP.resx">
+      <DependentUpon>frmSelectBP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU2_1_BP.resx">
+      <DependentUpon>frmU2_1_BP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU3_2_SQLServer.resx">
+      <DependentUpon>frmU3_2_SQLServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU3_3_SQLCommand.resx">
+      <DependentUpon>frmU3_3_SQLCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU4_2_ComboBox.resx">
+      <DependentUpon>frmU4_2_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU4_3_DataGridView.resx">
+      <DependentUpon>frmU4_3_DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU4_4_Dataset.resx">
+      <DependentUpon>frmU4_4_Dataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU5_2_Databinding.resx">
+      <DependentUpon>frmU5_2_Databinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU5_5_DatabindingOneRecord.resx">
+      <DependentUpon>frmU5_5_DatabindingOneRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU6_5MasterDetail_Order.resx">
+      <DependentUpon>frmU6_5MasterDetail_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU7_2_BPList.resx">
+      <DependentUpon>frmU7_2_BPList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmU7_3_OrderList.resx">
+      <DependentUpon>frmU7_3_OrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_go_first.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_go_last.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_go_previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_go_next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
